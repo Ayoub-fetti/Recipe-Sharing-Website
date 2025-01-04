@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Recipes</h1>
+    <a href="/recipes/create">Add new Recipe</a>
+    <ul>
+        <?php foreach ($data['recipes'] as $recipe) : ?>
+            <li> <?= $recipe['title'] ?> </li>
+            <?php endforeach; ?>
+    </ul>
+    
+</body>
+</html>
